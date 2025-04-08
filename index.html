@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dannoun Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1fdf1;
+      color: #1a3f1a;
+      margin: 0;
+      padding: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    header {
+      background-color: #2f8f2f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #e0fbe0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav button {
+      margin: 5px;
+      padding: 8px 12px;
+      border: none;
+      background-color: #2f8f2f;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    nav button:hover {
+      background-color: #256e25;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2f8f2f;
+      border-bottom: 2px solid #2f8f2f;
+      padding-bottom: 5px;
+    }
+    .menu-section {
+      margin-bottom: 30px;
+      display: none;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f4fff4;
+      border-left: 4px solid #2f8f2f;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    li:hover {
+      background-color: #e0fbe0;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2f8f2f;
+      color: white;
+    }
+    .lang-toggle {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .food-img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body onload="showSection('hummus')">
+  <header>
+    <h1>Dannoun Menu</h1>
+    <p>Location: Jebran Khalil Jebran street | Call: 06 433 987</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('hummus')">Hummus</button>
+    <button onclick="showSection('foul')">Foul</button>
+    <button onclick="showSection('fatteh')">Fatteh</button>
+    <button onclick="showSection('pastry')">Pastry</button>
+    <button onclick="showSection('soups')">Soups</button>
+  </nav>
+
+
+
+    
+
+    <div id="hummus" class="menu-section">
+      <h2>Hummus</h2>
+      <ul>
+        <li><img src="images/yasrya.jpg" alt="Yasriya" class="food-img"><strong>Yasriya:</strong> Smooth chickpeas with ground walnuts and parsley inside. <Br> price: 450,000LBP</li>
+        <li><img src="images/remen .jpg" alt="Yasriya w Remen" class="food-img"><strong>Yasriya w Remen:</strong> Smooth chickpeas with ground walnuts and parsley inside and pomegranate on top. <br> price:600,000</li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9oYC28r-vDSMuw2mmb0QnXroya_G18iqVYg&s" alt="Yasriya b Lahme w Mukasrat" class="food-img"><strong>Yasriya b Lahme w Mukasrat:</strong> Smooth chickpeas with ground walnuts and parsley inside adding nuts and meat on top.<br> price:800,000LBP</li>
+        <li><img src="images/futur.jpg" alt="Yasriya b Futur" class="food-img"><strong>Yasriya b Futur:</strong> Smooth chickpeas with ground walnuts and parsley inside adding mushrooms on top. <br>price: 700,000LBP</li>
+        <li><img src="images/yasrya.jpg" alt="Yasriya bl Moukasarat" class="food-img"><strong>Yasriya bl Moukasarat:</strong> Smooth chickpeas with ground walnuts and parsley inside and nuts on top. <br>price:550,000LBP </li>
+        <li><img src="images/beefhumus.jpg" alt="Hummus blahme" class="food-img"><strong>Hummus blahme:</strong> Smooth chickpeas with nuts and meat.<br> price: 700,000LBP</li>
+        <li><img src="images/humus.jpg" alt="Hummus btahini" class="food-img"><strong>Hummus btahini</strong> price: 350,000LBP</li>
+
+
+
+        <li><img src="images/humus.jpg" alt="Hummus b Samneh w Mukasarat" class="food-img"><strong>Hummus b Samneh w Mukasarat:</strong> Smooth chickpeas with traditional ghee. <br>price: 450,000LBP</li>
+        <li><img src="images/hab tahene.jpg" alt="Hummus hab tahine" class="food-img"><strong>Hummus hab tahine:</strong> Boiled chickpeas with garlic and salt adding few lemon juice and tahini.<br> price: 350,000LBP </li>
+        <li><img src="images/hab hamud .jpg" alt="Hummus hab hamod" class="food-img"><strong>Hummus hab hamod:</strong> Boiled chickpeas with garlic and salt adding few lemon juice.<br> price: 300,000LBP</li>
+        <li><img src="images/489625455_1461170244941404_7293361167197072427_n.jpg" alt="malizya" class="food-img"><strong>malyzia:</strong> Hummus hab tahini, samneh, har, nuts 
+          <br>price: 400,000LBP </li>
+        
+       
+        <li><img src="images/2.jpg" alt="Hummus bil Spirulina ma' lahmeh " class="food-img"><strong>Hummus bil Spirulina ma' lahmeh </strong> price: 800,000LBP</li>   
+         <li><img src="images/1.jpg" alt="Hummus bil Spirulina" class="food-img"><strong>Hummus bil Spirulina </strong> price: 500,000LBP</li>      
+      </ul>
+    </div>
+
+    <div id="fatteh" class="menu-section">
+      <h2>Fatteh</h2>
+      <ul>
+        <li><img src="images/fatteh.jpg"  class="food-img"> <strong>Fatteh Foul</strong> - Price: 450,000 LBP</li>
+        <li><img src="images/fatteh.jpg"  class="food-img"><strong>Fatteh Qat3a</strong> - Price: 450,000 LBP</li>
+        <li><img src="images/fatteh w meat.jpg" class="food-img"> <strong>Fateth b Lahme w Mukasarat</strong> - Price: 800,000 LBP</li>
+        <li><img src="images/fatteh.jpg" class="food-img"> <strong>Fatteh b Samneh w Moukasarat</strong> - Price: 450,000 LBP</li>
+      </ul>
+    </div>
+
+<div id="soups" class="menu-section">
+      <h2>Soups</h2>
+      <ul>
+        <li><img src="images/humus soap .jpg" alt="Hummus soap" class="food-img"><strong>Hummus soup </strong>Boiled chickpeas with zucchini, onion, and spices.<br>
+           price: 250,000 LBP</li></li>
+      </ul>
+    </div>
+
+    <div id="pastry" class="menu-section">
+      <h2>Pastry</h2>
+      <ul>
+        <li><img src="images/zaatar.jpg" class="food-img"><strong>Zaatar</strong> - Price: 100,000 LBP</li>
+        <li><img src="images/cheese mankush.jpg" class="food-img"><strong>Jebneh</strong> - Price: 200,000 LBP</li>
+        <li><img src="images/" class="food-img"><strong>Danouche</strong> - Price: 300,000 LBP</li>
+        <li><img src="images/" class="food-img"><strong>Danouche Lahme</strong> - Price: 600,000 LBP</li>
+        <li><img src="images/beef.jpg" class="food-img"><strong>Sfiha Blahme (Large)</strong> - Price: 500,000 LBP</li>
+        <li><img src="images/beef mankush mini .jpg" class="food-img"><strong>Sfiha Blahme (Small)</strong> - Price: 300,000 LBP</li>
+      </ul>
+    </div>
+
+    <div id="foul" class="menu-section">
+      <h2>Foul</h2>
+      <ul>
+        <li><img src="images/ful w tahene .jpg" alt="ful" class="food-img"><strong>Foul btahini</strong> - Price: 350,000 LBP</li>
+        <li><img src="images/ful.jpg" alt="foul" class="food-img"><strong>Foul bhamod</strong> - Price: 300,000 LBP</li>
+        <li><img src="images/ful w tahene .jpg" alt="ful" class="food-img"><strong>Foul madqouq bi taheeneh</strong> - Price: 250,000 LBP</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Dannoun Menu. All rights reserved.
+  </div>
+
+  <script>
+   
+
+    function showSection(id) {
+      const sections = document.querySelectorAll('.menu-section');
+      sections.forEach(section => section.style.display = 'none');
+      const target = document.getElementById(id);
+      if (target) target.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
